@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+.container-form-home{
+  margin: 20px auto;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 2px 3px 3px 4px rgba(206, 199, 199, 0.767);
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container-form-home a{
+  text-decoration: none;
+  color: black;
+}
+.container-form-home:active{
+  border: 1px solid black;
+}
+.container-form {
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 2px 3px 3px 4px rgba(206, 199, 199, 0.767);
+  position: relative;
+  border-radius: 25px;
+}
+
+.container-form-fields {
+  padding: 10px 0;
+}
+
+.container-form-fields label {
+  position: absolute;
+  left: 3%;
+}
+.container-form-fields input {
+  width: 50%;
+  height: 20px;
+  outline: none;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+::placeholder {
+  visibility: hidden;
+}
+.container-form-fields button {
+  border: 0;
+  width: 51%;
+  height: 21px;
+  font-size: 17px;
+  cursor: pointer;
+  background: rgb(19, 15, 15);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container-form-fields button:active {
+  color: rgb(19, 15, 15);
+  background: #fff;
+}
+.client-info {
+  padding: 20px;
+  width: 70%;
+  box-shadow: 2px 3px 3px 4px rgba(206, 199, 199, 0.767);
+  margin: 0 auto;
+  margin-top: 60px;
+ 
+ 
+}
+
+.client-info > h2 {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.client-info-ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: rgba(247, 244, 244, 0.767);
+  box-shadow: 2px 3px 3px 4px rgba(206, 199, 199, 0.767);
+  gap: 3px;
+ 
+  margin: 15px;
+  padding: 7px 10px;
+  position: relative;
+ 
+}
+/* .client-info-ul:active{
+  background: black;
+  color: #fff;
+  border: 1px solid black;
+} */
+.client-info-ul li {
+  list-style: none;
+  text-align: start;
+}
+.delete-button{
+  width: 40px;
+  border: 0;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  cursor: pointer;
+  color: red;
+}
+.delete-button:active{
+  border: 1px solid #fff;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 3px 0;
+}
+.update-button{
+  width: 40px;
+  border: 0;
+  background: transparent;
+  position: absolute;
+  right: 4%;
+  top: 35%;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px 0;
+}
+.update-button:active{
+  border: 1px solid #fff;
+  background: black;
+  color: #fff;
+}
+
+@media screen and (max-width: 615px) {
+  .container-form {
+    width: 75%;
+  }
+  .container-form-fields label {
+    display: none;
+  }
+  ::placeholder {
+    visibility: visible;
+  }
+  .container-form-fields input {
+    width: 70%;
+  }
+  .container-form-fields button {
+    width: 70%;
+    font-size: 14px;
+  }
+  .client-info > h2 {
+    left: 30%;
+  }
+  .update-button{
+    top: 50%;
+    right: 0;
+  }
+}
+@media screen and (max-width: 315px) {
+  .client-info-ul li {
+    font-size: 4vw;
+  }
+  .client-info {
+    width: 90%;
+    box-shadow: 0 0 0 0;
+    margin: 0;
+  }
+  .client-info > h2 {
+    position: static;
+  }
+}
